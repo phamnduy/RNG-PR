@@ -6,43 +6,41 @@ import TextField from "@material-ui/core/TextField";
 import Box from '@material-ui/core/Box';
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Link from '@material-ui/core/Link'
-
 const LoginContainer = styled.div(({ theme }) => ({
 	display: "flex",
 	flexDirection: 'column',
-	width: '375px',
 	minHeight: '100vh',
 
 }))
 
-const CustomLink =  styled(Link)(({ theme }) => ({
+const CustomLink = styled(Link)(({ theme }) => ({
 	cursor: 'context-menu',
-    color: '#ff6f23 !important'
+	color: '#ff6f23 !important'
 }))
-const CustomButton =  styled.button(({ theme }) => ({
+const CustomButton = styled.button(({ theme }) => ({
 	background: '#ff6f23 !important',
-    borderColor: '#ff6f23 !important',
-    color: '#ffffff !important',
+	borderColor: '#ff6f23 !important',
+	color: '#ffffff !important',
 	width: '100%',
 	height: '54px'
 }))
 
 const ButtonContainer = styled.div(() => ({
 	position: 'fixed',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    width: '100%',
-    paddingLeft: '16px',
-    paddingRight: '16px',
-    background:' #FFF',
-    minHeight: '84px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+	bottom: 0,
+	left: 0,
+	right: 0,
+	width: '100%',
+	paddingLeft: '16px',
+	paddingRight: '16px',
+	background: ' #FFF',
+	minHeight: '84px',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
 	width: '414px',
-    marginLeft: 'auto',
-    marginRight: 'auto'
+	marginLeft: 'auto',
+	marginRight: 'auto'
 }))
 
 const CustomImage = styled.img(() => ({
@@ -90,7 +88,9 @@ const Login = ({ }) => {
 				<CustomLink>Quên mật khẩu</CustomLink>
 			</Box>
 			<ButtonContainer>
-				<CustomButton>Đăng nhập</CustomButton>
+				<CustomButton>
+					<Link href='/Home'>Đăng nhập</Link>
+				</CustomButton>
 			</ButtonContainer>
 		</LoginContainer>
 	)
