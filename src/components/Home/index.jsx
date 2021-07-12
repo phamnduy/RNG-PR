@@ -29,8 +29,6 @@ const HomeContainer = styled.div(({ theme }) => ({
     // alignItems: 'center',
     minHeight: '100vh',
     width: '375px'
-
-
 }));
 
 const NavContainer = styled.div(() => ({

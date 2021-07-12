@@ -15,10 +15,12 @@ const SessionHeader = styled.div(({ theme }) => ({
 
 
 const Header = ({ title }) => {
+
+
 	return (
-		<SessionHeader>
-			{title}
-		</SessionHeader>
+			<SessionHeader>
+				{title}
+			</SessionHeader>
 	);
 };
 
